@@ -1,0 +1,26 @@
+{
+  "projectId": "verifyly-closing",
+  "brand": "verifyly",
+  "format": "desktop",
+  "audioTrack": "audio/verifyly-closing.mp3",
+  "scenes": [
+    {
+      "id": "closing-1",
+      "type": "outro",
+      "headline": "Thank you for your time.",
+      "subheadline": "Created by The Trendsetter Agency",
+      "voiceover": "Thank you for your time. This was created for people by The Trendsetter Agency.",
+      "durationSec": 4,
+      "screenshots": ["projects/verifyly/home.png"]
+    },
+    {
+      "id": "closing-2",
+      "type": "outro",
+      "headline": "Great tools for people.",
+      "subheadline": "People tools • Business tools • Daily tools",
+      "voiceover": "We're building great tools — people tools, business tools, and daily tools — to help protect everyday life before scammers can strike. Download Verifyly on the App Store, and let’s stop fraud together.",
+      "durationSec": 6,
+      "screenshots": ["projects/verifyly/home.png"]
+    }
+  ]
+}
