@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import os from "os";
 import { parseFile } from "music-metadata";
 import { bundle } from "@remotion/bundler";
 import { renderMedia, selectComposition } from "@remotion/renderer";
@@ -87,6 +88,18 @@ async function main() {
 
   const sizeMb = fs.statSync(outputLocation).size / (1024 * 1024);
   console.log(`[build] Done: ${outputLocation} (${sizeMb.toFixed(2)} MB)`);
+
+  // Copy the finished MP4 into the user's Downloads folder (never fails the build).
+  try {
+    const home = (process.platform === "win32" ? process.env.USERPROFILE : process.env.HOME) || os.homedir();
+    const downloadsDir = path.join(home, "Downloads");
+    fs.mkdirSync(downloadsDir, { recursive: true });
+    const downloadsPath = path.join(downloadsDir, `${synced.projectId}.mp4`);
+    fs.copyFileSync(outputLocation, downloadsPath);
+    console.log(`[build] Copied to Downloads: ${downloadsPath}`);
+  } catch (err) {
+    console.warn(`[build] Could not copy MP4 to Downloads: ${String(err)}`);
+  }
 }
 
 main().catch((err) => {
