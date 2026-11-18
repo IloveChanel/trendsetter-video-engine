@@ -1,0 +1,17 @@
+﻿{
+  "brandName": "Verifyly",
+  "tagline": "Check it before you trust it.",
+  "agency": "The Trendsetter Agency",
+  "creator": "Michelle Vance",
+  "website": "thetrendsetteragency.com",
+  "email": "michelletrendsetters@gmail.com",
+  "colors": {
+    "background": "#F6F3EB",
+    "primary": "#1E3D2F",
+    "accent": "#2E6F40",
+    "warning": "#D97706",
+    "danger": "#B91C1C",
+    "text": "#1E3D2F",
+    "muted": "#5C6B63"
+  }
+}

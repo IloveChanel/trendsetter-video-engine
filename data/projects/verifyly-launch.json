@@ -1,0 +1,44 @@
+﻿{
+  "projectId": "verifyly-launch",
+  "brand": "verifyly",
+  "format": "desktop",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "scene-1-intro",
+      "type": "intro",
+      "headline": "Check it before you trust it.",
+      "subheadline": "Scan. Upload. Verify.",
+      "durationSec": 7,
+      "voiceover": "Before you click that link, scan that QR code, or reply to a weird text—meet Verifyly. It is your personal fraud checker built to tell you what is real before you act.",
+      "screenshots": ["projects/verifyly/home.png"]
+    },
+    {
+      "id": "scene-2-stats",
+      "type": "stats",
+      "headline": "U.S. Fraud Losses Hit $15.9B",
+      "subheadline": "Scams and identity theft are at an all-time high.",
+      "durationSec": 7,
+      "voiceover": "Fraud losses just hit nearly sixteen billion dollars, identity theft jumped almost twenty percent, and credit card fraud surged over thirty percent.",
+      "chartPoints": [
+        { "year": "2021", "amount": 5.8, "label": "$5.8B" },
+        { "year": "2023", "amount": 10.0, "label": "$10.0B" },
+        { "year": "2024", "amount": 12.5, "label": "$12.5B" },
+        { "year": "2025", "amount": 15.9, "label": "$15.9B" }
+      ],
+      "stats": [
+        { "label": "Identity Theft", "value": "+19.6%" },
+        { "label": "Credit Card Fraud", "value": "+33%" }
+      ]
+    },
+    {
+      "id": "scene-3-outro",
+      "type": "outro",
+      "headline": "Built with heart for everyday people.",
+      "subheadline": "Created by The Trendsetter Agency — Michelle Vance",
+      "durationSec": 8,
+      "voiceover": "Verifyly was built with you in mind—because we are passionate about creating real technology that protects everyday people. Created by Michelle Vance at The Trendsetter Agency. Thank you so much for your time, and let’s keep each other safe.",
+      "screenshots": ["projects/verifyly/home.png"]
+    }
+  ]
+}
