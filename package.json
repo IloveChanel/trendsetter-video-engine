@@ -6,23 +6,27 @@
     "dev": "remotion studio",
     "build": "tsc --noEmit",
     "build-video": "tsx scripts/build-video.ts",
-    "batch-render": "tsx scripts/batch-render.ts"
+    "batch-render": "tsx scripts/batch-render.ts",
+    "sync-assets": "tsx scripts/sync-drive-assets.ts",
+    "test:e2e": "tsx tests/e2e.test.ts"
   },
   "dependencies": {
-    "@remotion/cli": "^4.0.0",
-    "@remotion/media-utils": "^4.0.0",
-    "@remotion/renderer": "^4.0.0",
+    "@remotion/bundler": "4.0.545",
+    "@remotion/cli": "4.0.545",
+    "@remotion/media-utils": "4.0.545",
+    "@remotion/renderer": "4.0.545",
     "music-metadata": "^12.7.0",
     "node-edge-tts": "^1.2.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "remotion": "^4.0.0",
+    "remotion": "4.0.545",
     "zod": "4.6.7"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "tsx": "^4.16.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "@types/node": "^24.0.0"
   }
 }

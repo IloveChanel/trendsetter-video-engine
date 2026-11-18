@@ -1,4 +1,4 @@
-﻿{
+{
   "compilerOptions": {
     "target": "ES2022",
     "module": "ESNext",
@@ -12,5 +12,5 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src", "config", "data", "ai", "scripts", "remotion.config.ts"]
+  "include": ["src", "config", "data", "ai", "scripts", "tests", "remotion.config.ts"]
 }
